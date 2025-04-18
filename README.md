@@ -43,12 +43,14 @@ By performing effective preprocessing and EDA, we aim to enhance the dataset’s
 
 ## EDA and Preprocessing Steps Done are :
 
-1. Data Exploration 
+1. Data Exploration
+
    Listed unique values and length of each column.
    Statistical summary of numerical features.
    Renamed columns for consistency and readability.
 
-2. Data Cleaning 
+2. Data Cleaning
+ 
    Identified and treated missing and inappropriate values.
    Replaced age = 0 with NaN.
    Filled NaN with median (numeric) or mode (categorical).
