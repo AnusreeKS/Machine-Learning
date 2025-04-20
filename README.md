@@ -101,24 +101,24 @@ The goal is to predict median house values based on features like income, locati
 
 3) Evaluation Metrics
 
-Each model was evaluated using:
+    Each model was evaluated using:
 
-   Mean Squared Error (MSE)
-   Mean Absolute Error (MAE)
-   R² Score (coefficient of determination)
+         Mean Squared Error (MSE)
+         Mean Absolute Error (MAE)
+         R² Score (coefficient of determination)
 
 
 
 4) Model Comparison Results
 
-| Model                  | MSE    | MAE    | R² Score |
-|------------------------|--------|--------|----------|
-| Random Forest Regressor| lowest | lowest | highest ✅ |
-| SVR                    | highest| highest| lowest ❌ |
+      | Model                  | MSE    | MAE    | R² Score |
+      |------------------------|--------|--------|----------|
+      | Random Forest Regressor| lowest | lowest | highest ✅ |
+      | SVR                    | highest| highest| lowest ❌ |
 
 
-Best Performer**: `RandomForestRegressor` — High accuracy, low error.
-Worst Performer**: `SVR` — Struggled with scale and complexity of the data.
+      Best Performer**: `RandomForestRegressor` — High accuracy, low error.
+      Worst Performer**: `SVR` — Struggled with scale and complexity of the data.
 
 
 
