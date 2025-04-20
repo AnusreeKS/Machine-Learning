@@ -122,5 +122,58 @@ The goal is to predict median house values based on features like income, locati
 
 
 
+# Assignment 4 : Classification 
+
+## Overview :
+   
+   This project applies multiple supervised classification algorithms to the **Breast Cancer Wisconsin** dataset using `scikit-learn`. 
+   The objective is to accurately classify tumors as malignant or benign based on various features.
+
+## Processing Steps :
+
+   ###Loaded dataset using `load_breast_cancer()`
+      - Converted data to pandas DataFrame
+      -  Checked and confirmed no missing values
+      -  Applied **StandardScaler** to normalize features (important for SVM and KNN)
+      -  Split dataset into **training (80%)** and **testing (20%)** using `train_test_split'
+
+
+  ###  Classification Models Implemented
+
+      | Algorithm             | Description |
+      |----------------------|-------------|
+      | Logistic Regression  | Models probabilities using the sigmoid function |
+      | Decision Tree        | Recursive tree structure for feature-based splits |
+      | Random Forest        | Ensemble of decision trees (bagging) |
+      |*Support Vector Machine (SVM)| Maximizes margin between classes |
+      | k-Nearest Neighbors (k-NN)| Classifies based on closest neighbors |
+
+Each model was trained on the preprocessed dataset and evaluated using performance metrics.
+
+
+   ### Evaluation Metrics
+
+      - Accuracy
+      - Classification Report (Precision, Recall, F1-score)
+      - Confusion Matrix
+
+
+   ### Model Performance Comparison
+
+      | Model                  | Accuracy Score |
+      |------------------------|----------------|
+      | Random Forest          | 🥇 Highest accuracy |
+      | Logistic Regression    | High |
+      | SVM                    | High |
+      | Decision Tree          | Moderate |
+      | k-NN                   | Lower (may vary depending on `k`) |
+
+
+   #### Best Model: Random Forest (balanced, robust performance)
+   #### Worst Model: k-NN (performance can vary depending on scaling and `k`)
+
+
+
+
 
 
