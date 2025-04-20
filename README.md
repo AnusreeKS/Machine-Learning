@@ -73,3 +73,54 @@ By performing effective preprocessing and EDA, we aim to enhance the dataset’s
    Applied StandardScaler and MinMaxScaler on numeric features for ML readiness.
 
 
+# Assignment 3 :  Regression
+
+## Overview 
+This project explores various regression techniques in supervised machine learning using the California Housing dataset.
+The goal is to predict median house values based on features like income, location, and population.
+
+## Processing Steps 
+
+1) Loading and Preprocessing
+    Loaded dataset using `fetch_california_housing(). Converted data to a pandas DataFrame.Checked for missing values (none found).Scaled features using `StandardScaler` (important for SVR and Linear Regression)
+    Split data into 80% training and 20% testing using `train_test_split`.
+
+
+
+2) Models Implemented
+
+| Model                      | Description |
+|---------------------------|-------------|
+| `LinearRegression`        | Fits a linear model to the data |
+| `DecisionTreeRegressor`   | Tree-based model that splits data on feature thresholds |
+| `RandomForestRegressor`   | Ensemble of multiple decision trees (bagging) |
+| `GradientBoostingRegressor` | Builds trees sequentially to correct errors |
+| `SVR` (Support Vector Regressor) | Attempts to fit a regression within a margin; sensitive to feature scaling |
+
+---
+
+3) Evaluation Metrics
+
+Each model was evaluated using:
+
+   Mean Squared Error (MSE)
+   Mean Absolute Error (MAE)
+   R² Score (coefficient of determination)
+
+
+
+4) Model Comparison Results
+
+| Model                  | MSE    | MAE    | R² Score |
+|------------------------|--------|--------|----------|
+| Random Forest Regressor| lowest | lowest | highest ✅ |
+| SVR                    | highest| highest| lowest ❌ |
+
+
+Best Performer**: `RandomForestRegressor` — High accuracy, low error.
+Worst Performer**: `SVR` — Struggled with scale and complexity of the data.
+
+
+
+
+
