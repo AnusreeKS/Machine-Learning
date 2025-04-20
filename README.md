@@ -113,8 +113,8 @@ The goal is to predict median house values based on features like income, locati
 
       | Model                  | MSE    | MAE    | R² Score |
       |------------------------|--------|--------|----------|
-      | Random Forest Regressor| lowest | lowest | highest ✅ |
-      | SVR                    | highest| highest| lowest ❌ |
+      | Random Forest Regressor| lowest | lowest | highest  |
+      | SVR                    | highest| highest| lowest  |
 
 
       Best Performer**: `RandomForestRegressor` — High accuracy, low error.
@@ -162,7 +162,7 @@ Each model was trained on the preprocessed dataset and evaluated using performan
 
       | Model                  | Accuracy Score |
       |------------------------|----------------|
-      | Random Forest          | 🥇 Highest accuracy |
+      | Random Forest          | Highest accuracy |
       | Logistic Regression    | High |
       | SVM                    | High |
       | Decision Tree          | Moderate |
