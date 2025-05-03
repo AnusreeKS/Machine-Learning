@@ -173,6 +173,29 @@ Each model was trained on the preprocessed dataset and evaluated using performan
    #### Worst Model: k-NN (performance can vary depending on scaling and `k`)
 
 
+# Assignment 5 ; Clustering
+
+## Overview
+
+This Jupyter Notebook explores unsupervised learning using **KMeans clustering** on a structured dataset, most likely the **Iris dataset**. It demonstrates clustering techniques along with visualization and evaluation strategies.
+
+## Contents
+
+      Loading and Preprocessing: Initial data loading and basic exploration.
+      #### KMeans Clustering: 
+           - Explanation of the KMeans algorithm.
+           - Application of KMeans to partition the dataset into clusters.
+      #### Elbow Method: 
+           - Used to determine the optimal number of clusters (`k`) by plotting Within-Cluster-Sum-of-Squares (WCSS).
+
+## Highlights
+
+- Clear explanation of how KMeans works.
+- Practical demonstration using real-world structured data.
+- Visualizations of clustering results (e.g. scatter plots).
+- Use of the Elbow Method to justify choice of `k`.
+
+
 
 
 
