@@ -196,6 +196,50 @@ This Jupyter Notebook explores unsupervised learning using **KMeans clustering**
 - Use of the Elbow Method to justify choice of `k`.
 
 
+# Module End Assignment : Car Price Prediction
+
+## Overview : 
+   This project is developed for analyzing car price dynamics in the US market using machine learning. It is designed for a Chinese automobile company entering the US market and aims to help management understand which factors significantly impact car pricing.
+
+## Objective :
+
+   To model car prices using regression techniques and identify which features most affect price — enabling better business and design strategies for the US market.
+
+## Steps Performed
+
+1. Data Preprocessing
+   - Cleaned and corrected car brand names
+   - Converted categorical features to numerical using one-hot encoding
+   - Scaled features using `StandardScaler`
+
+2. Model Training
+   - Trained 5 regression models:
+     - Linear Regression
+     - Decision Tree Regressor
+     - Random Forest Regressor
+     - Gradient Boosting Regressor
+     - Support Vector Regressor (SVR)
+
+3. Model Evaluation
+   - Compared using:
+     - R² Score
+     - Mean Squared Error (MSE)
+     - Mean Absolute Error (MAE)
+   - Visualized predicted vs actual prices
+
+4. Feature Importance
+   - Extracted top contributing features using Random Forest
+
+5. Hyperparameter Tuning
+   - Performed grid search on Random Forest to improve performance
+
+## Key Metrics
+
+- Best Model: Random Forest Regressor (after tuning)
+- Top Features: Engine size, horsepower, curb weight, car width, brand
+
+
+
 
 
 
